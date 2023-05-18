@@ -15,12 +15,14 @@
         </style>
 </head>
     <body>
+<audio autoplay="autoplay" height="100" width="100">
+            <source src="renxi.mp3" type="audio/mp3" />
+            <embed height="100" width="100" src="renxi.mp3" />
+</audio>
         <div id="main">
             <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
-            <audio autoplay="autoplay" height="100" width="100">
-                    <source src="renxi.mp3" type="audio/mp3" />
-                    <embed height="100" width="100" src="renxi.mp3" />
-            </audio>
+            
+ 
             <div id="wrap">
                 <div id="text">
                     <div id="code"> <font color="#FF0000"> <span class="say">亲爱的宝宝，我爱你</span><br>
@@ -52,9 +54,9 @@
         </div>
     
     <script>
-        document.addEventListener('click', function() {
+    document.addEventListener('click', function() {
     document.getElementById('audios').play()
-})()
+})
     </script>
 
     <script>
