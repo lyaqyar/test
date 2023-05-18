@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="card">
-    <div class="text content">
+    <div class="text content" id="text">
         i love you
     </div>
     <div class="textTwo content">
@@ -17,10 +17,20 @@
     </div>
     <div class="heart content"></div>
 </div>
-
-<div id="box">
-
-</div>
+<div id="box"></div>
 <script src="letter.js"></script>
+
+<script>
+    var textElement = document.getElementById('text');
+
+    // 监听文字播放完成事件
+    textElement.addEventListener('animationend', function() {
+      // 文字播放完成后，延迟一定时间后跳转到下一个页面
+      setTimeout(function() {
+        window.location.href = 'skystar.html';
+      }, 2000); // 延迟 2 秒后跳转，根据需要调整延迟时间
+    });
+</script>
+
 </body>
 </html>
