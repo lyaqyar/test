@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,18 +19,8 @@
 </div>
 <div id="box"></div>
 <script src="letter.js"></script>
+<a id="nextPageLink" href="skystar.html" style="display: none;color: #00ffd1;font-size:30px; font-family: 'YouYuan';">点击瞅瞅The skystar for you </a>
 
-<script>
-    var textElement = document.getElementById('text');
-
-    // 监听文字播放完成事件
-    textElement.addEventListener('animationend', function() {
-      // 文字播放完成后，延迟一定时间后跳转到下一个页面
-      setTimeout(function() {
-        window.location.href = 'skystar.html';
-      }, 2000); // 延迟 2 秒后跳转，根据需要调整延迟时间
-    });
-</script>
 
 </body>
 </html>
